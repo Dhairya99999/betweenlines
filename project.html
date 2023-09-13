@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/project.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/9602f37a92.js" crossorigin="anonymous"></script>
+
+  <style>
+    a.menu__item:hover{
+        color:var(--lighter-grey);
+    }
+  </style>
+   
+</head>
+
+<body>
+  <header>
+
+    <a href="./index.html">
+      <div class="check"></div>
+    </a>
+
+
+    <div class="hamburger-menu">
+      <input onclick={onClickMenu()} id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+
+        <img style="cursor: pointer; height: 28px;" src="./media/menu.svg" alt="" id="menuImgClosed" />
+        <svg style="display: none;" xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+          fill="none" id="menuImgOpen">
+          <path
+            d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z"
+            fill="#D6D6D6" />
+        </svg>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./work-list.html">Work</a></li>
+        <li><a class="menu__item" href="./practice.html">Practice</a></li>
+        <li><a class="menu__item" href="news.html">News</a></li>
+        <li><a class="menu__item" href="/stories.html">Stories</a></li>
+        <li><a class="menu__item" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+  </header>
+  <div class="container">
+<div class="spacing-80"></div>
+    <div class="container-21">
+      <div class="sub-div-211">Architecture, Residential</div>
+      <div class="sub-div-221">
+        <div class="div-22-11">Breathe</div>
+        <div class="div-22-21">Kagalipuram</div>
+      </div>
+    </div>
+    <div class="container-31">
+      <img src="./media/project-img1.png" />
+    </div>
+    <div class="container-41">
+      <div class="upper-div4" id="first">
+        <div class="about-text black" onclick="myFunction()" id="myBtn">
+          About the project
+          <i style="font-size: 18px" class="fas" id="more"> &#xf107;</i>
+        </div>
+
+
+        <div class="lower-div4" id="dots">
+          <div class="sub-div41">
+            <div class="sub-div41-1">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                itaque laborum omnis eaque, ab suscipit vero ex eum culpa,
+                blanditiis rem laboriosam quis veritatis inventore saepe dicta
+                non. Molestiae et placeat sit voluptatibus quas amet expedita
+                beatae dolore exercitationem, id, facere quos fuga sed eveniet
+                cum temporibus accusamus sint nihil possimus provident quibusdam
+                a quisquam eos? Natus dolores ullam, magni earum possimus iste
+                maxime cum et nemo asperiores, velit consequatur eaque ducimus
+                perferendis aut illo rerum! Voluptate odio similique, distinctio
+                sit, deleniti, possimus ex quos ratione adipisci dolorum rerum
+                nostrum temporibus? Obcaecati vel dolorem velit, enim nam
+                pariatur a amet accusamus eaque tenetur atque!
+              </p>
+              <br />
+              <p>
+                Deleniti, repellendus, dolores placeat nobis facere aut,
+                asperiores in necessitatibus provident corporis odit ex iusto
+                adipisci minima labore quidem laborum doloremque non facilis
+                accusantium unde ullam! Excepturi voluptatum nesciunt
+                consequatur ipsum consequuntur unde dolores amet natus! Itaque
+                eius pariatur sint fugit eos eum totam blanditiis corrupti
+                labore? Unde enim rerum neque saepe asperiores voluptate ad
+                dicta! Nemo laborum ipsa adipisci tempora asperiores sapiente
+                vitae pariatur voluptatem, excepturi illum culpa eius, labore
+                provident rerum aperiam. Non, alias neque. Atque expedita dicta
+              </p>
+              <br />
+              <p>
+                temporibus delectus nemo accusamus reiciendis praesentium totam
+                possimus obcaecati officia ducimus quam unde mollitia voluptate
+                laboriosam dolore fuga magnam rerum, fugiat cum quod! Possimus
+                delectus porro saepe, iure magnam rem harum perspiciatis
+                asperiores aut quae consequuntur inventore eveniet? Quos
+                doloribus fugit quaerat iure aut quis, minima, rem at vel
+                delectus expedita! Adipisci iure, quae possimus nulla optio
+                temporibus perspiciatis quia aperiam autem eius aspernatur
+                cupiditate laboriosam.
+              </p>
+              <br />
+            </div>
+            <div class="sub-div41-2">
+              <!-- crooss -->
+              <!-- <div class="proj-cross"><i class="fa-regular fa-circle-xmark" style="color: #000000;"></i></div> -->
+              <div class="div-42-21">
+                <div>
+                  <p class="grey">Status</p>
+                  <p class="black">Mr. Ramakrishnan</p>
+                </div>
+
+                <div>
+                  <p class="grey">Location</p>
+                  <p class="black">Bengaluru</p>
+                </div>
+              </div>
+              <div>
+                <p class="grey">Client</p>
+                <p class="black">
+                  Mr. Ramakrishnan <br />
+                  Mrs. Rama Srivasana
+                </p>
+              </div>
+              <div>
+                <p class="grey">Client</p>
+                <p class="black">
+                  Mr. Ramakrishnan <br />
+                  Mrs. Rama Srivasana<br />
+                  Mr. Ramakrishnan <br />
+                  Mrs. Rama Srivasana<br />
+                  Mr. Ramakrishnan <br />
+                </p>
+              </div>
+              <div>
+                <p class="grey">Engineers</p>
+                <p class="black">Guruprasad Kalkura Associates</p>
+              </div>
+
+              <div>
+                <p class="grey">Contractors</p>
+                <p class="black">Ashok</p>
+              </div>
+              <div>
+                <p class="grey">Current project area</p>
+                <p class="black">3620 Sft</p>
+              </div>
+
+              <div>
+                <p class="grey">Current project cost</p>
+                <p class="black">INR 1,50,00,000</p>
+              </div>
+              <div>
+                <p class="grey">Photograph</p>
+                <p class="black">Raji Sunder Krishnan</p>
+              </div>
+            </div>
+          </div>
+          <div class="sub-div42">
+            <h2>Construction Details</h2>
+            <div class="img-details">
+              <img src="./media//proj-img2.png" class="proj-img2" alt="">
+              <p>Torem i sum dolor sit amet consectetur dipiscing elit. Etiam eu turpis molestie, ictum est a, mattis
+                tellus.</p>
+            </div>
+            <p class="proj-img2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum excepturi neque
+              recusandae quis voluptates voluptate necessitatibus officia quae quam vero reiciendis voluptas quasi nam
+              praesentium, quod dolor soluta, accusantium explicabo, in veritatis voluptatem. Adipisci iste temporibus
+              quod repudiandae culpa exercitationem architecto velit nam eveniet dolores inventore, nulla doloribus
+              repellendus quis laboriosam, sapiente reiciendis? Amet possimus quis tempore voluptatum distinctio minima
+              rerum? Cupiditate itaque facere voluptas ab facilis praesentium asperiores quas quam, a repellendus iure
+              incidunt exercitationem error odio molestiae nulla non, nobis doloremque suscipit magni atque. Atque enim
+              laboriosam dolor temporibus, nihil error vitae. Earum provident ipsam quibusdam sint distinctio.</p>
+            <div class="img-details">
+              <img src="./media//proj-img3.png" class="proj-img2" alt="">
+              <p>Torem i sum dolor sit amet consectetur dipiscing elit. Etiam eu turpis molestie, ictum est a, mattis
+                tellus.</p>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="upper-div">
+              <img src="./media/logo1.svg" alt="" class="footer-logo" />
+            </div>
+            <div class="lower-div">
+              <div class="lower-div-1">
+                <div class="footer-heading">Connect</div>
+                <div class="sub-footer">
+                  <a href="#" style="color: #ffffff" class="icon-div">
+                    <img src="./media/insta.svg" alt="" srcset="" /></a>
+                  <a href="#" style="color: #ffffff" class="icon-div">
+                    <img src="./media/fb.svg" alt="" srcset="" /></a>
+                  <a href="#" style="color: #ffffff" class="icon-div">
+                    <img src="./media/linkedin.svg" alt="" srcset="" /></a>
+                </div>
+              </div>
+              <div class="lower-div-2">
+                <div class="footer-heading">Visit</div>
+                <div class="div-2-upper">
+                  <div>
+                    <p class="text-underline"><span>Bangalore</span></p>
+          
+                    <p>#24, 35th main,Dollars</p>
+                    <p>Scheme,BTM layout, 1st Stage</p>
+                  </div>
+                  <div>
+                    <p class="text-underline"><span>Chennai</span></p>
+          
+                    <p>#5, 6th Main Rd,New</p>
+                    <p>Colony,Chromepet</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lower-div-3">
+                <div class="div-3-upper">
+                  <p class="footer-heading">Enquiries</p>
+                  <p>contact.betweenlines@gmail.com</p>
+                  <button class="btn-div">Let's chat</button>
+                </div>
+                <div class="div-3-lower">
+                  <p class="footer-heading">Careers</p>
+                  <p>office.betweenlines@smail.com</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      
+    </div>  
+  </div>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var firstText = document.getElementById("first");
+      if (dots.style.display === "none") {
+        dots.style.display = "flex";
+        moreText.innerHTML = "&#xf107;";
+        first.style.flexDirection = "row"
+
+      } else {
+        dots.style.display = "none";
+        moreText.innerHTML = "&#xf106;";
+        first.style.flexDirection = "column";
+      }
+    }
+
+    function onClickMenu() {
+
+      const checkbox = document.querySelector('#menu__toggle');
+      if (checkbox.checked) {
+        document.querySelector("#menuImgClosed").style.display = "none"
+        document.querySelector("#menuImgOpen").style.display = "inline"
+
+      }
+      else {
+        document.querySelector("#menuImgOpen").style.display = "none"
+        document.querySelector("#menuImgClosed").style.display = "inline"
+
+      }
+
+    }
+
+
+      // 'isChecked' will be true if the checkbox is checked, and false if it's not.
+
+  </script>
+  <script src="./script/script.js"></script>
+</body>
+</body>
+
+</html>

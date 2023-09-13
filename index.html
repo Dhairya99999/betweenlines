@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+
+  <!-- Styles -->
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/9602f37a92.js" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+
+
+
+
+
+<style>
+      @media(min-width:1900px)
+      {
+       .para-div{
+        margin-left:1rem;
+       }
+       .para-div1{
+        margin-left:2rem;
+       }
+      }
+      @media only screen and (min-width:1000px) and (max-width:1200px)
+      {
+        .para-div{
+        margin-left:1.5rem;
+       }
+       .para-div1{
+        margin-left:3rem;
+       }
+        .para-div2{
+        margin-left:1rem;
+       }
+      }
+      @media only screen and (min-width:1200px) and (max-width:1400px)
+      {
+        .para-div{
+        margin-left:1rem;
+       }
+       
+        .para-div2{
+        margin-left:4rem;
+       }
+      }
+      @media only screen and (min-width:1400px) and (max-width:1500px)
+      {
+        .para-div{
+        margin-left:1rem;
+       }
+       .para-div1{
+        margin-left:5rem;
+       }
+       
+        .para-div2{
+        margin-left:10rem;
+       }
+      }
+      @media only screen and (min-width:1500px) and (max-width:1700px)
+      {
+        .para-div{
+        margin-left:3.5rem;
+       }
+       .para-div1{
+        margin-left:3.5rem;
+       }
+       
+      }
+
+      @media only screen and (min-width:1500px) and (max-width:1600px)
+      {
+        
+         .para-div2{
+          margin-left :-2rem;
+
+         }
+       
+      }
+      @media only screen and (min-width:1600px) and (max-width:1700px)
+      {
+        
+         .para-div2{
+          margin-left :-1rem;
+
+         }
+       
+      }
+
+
+      @media(min-width:2000px)
+      {
+        .para-div2{
+        margin-left:2rem;
+       }
+      }
+      @media only screen and (min-width:1900px) and (max-width:2000px)
+      {
+        .para-div2{
+        margin-left:9rem;
+       }
+      }
+      
+</style>
+
+
+</head>
+
+<body>
+  <header>
+
+    <a href="./index.html">
+      <div class="check"></div>
+    </a>
+
+
+    <div class="hamburger-menu">
+      <input onclick={onClickMenu()} id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+
+        <img style="cursor: pointer; height: 28px;" src="./media/menu.svg" alt="" id="menuImgClosed" />
+        <svg style="display: none;" xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+          fill="none" id="menuImgOpen">
+          <path
+            d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z"
+            fill="#D6D6D6" />
+        </svg>
+      </label>
+
+      <ul class="menu__box">
+        <li><a class="menu__item" href="./work-list.html">Work</a></li>
+        <li><a class="menu__item" href="./practice.html">Practice</a></li>
+        <li><a class="menu__item" href="news.html">News</a></li>
+        <li><a class="menu__item" href="/stories.html">Stories</a></li>
+        <li><a class="menu__item" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+  </header>
+
+  <main>
+    <!-- <div class="spacing-80"></div> -->
+    <div class="card">
+      <div class="cardImg">
+        <img src="./media/sample1.jpg" alt="" />
+      </div>
+      <div class="cardHeadings">
+        <div style="min-width: 50%;" class="cardHeadingsOne">
+          <p class="greyText">Breathe, Kagalipura</p>
+        </div>
+        <div class="para-div">
+          <p style="float: right;" class="headingTypeOne">
+            A residence that takes from and
+            <span class="redText">gives back</span> to its surroundings.
+          </p>
+          <a href="#" class="greyText">Read More &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardImg">
+        <img src="./media/sample2.jpg" alt="" />
+      </div>
+      <div class="cardHeadings">
+        <div style="min-width: 50%;"  class="cardHeadingsOne">
+          <p class="greyText">Handloom cafe, Hehehe</p>
+        </div>
+        <div class="para-div1">
+          <p style="float: right;" class="headingTypeOne">
+            Where weaving artistry meets illuminated motifs,
+            <span class="redText">celebrating the craft </span>and livelihood
+            of weavers.
+          </p>
+          <a href="#" class="greyText">Read More &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="cardImg">
+        <img src="./media/sample3.jpg" alt="" />
+      </div>
+      <div class="cardHeadings">
+        <div style="min-width: 50%;"  class="cardHeadingsOne">
+          <p class="greyText">Resin Creation</p>
+        </div>
+        <div class="para-div2">
+          <p  class="headingTypeOne">
+            A fusion of aesthetics and
+            <span class="redText">purposeful design.</span>
+          </p>
+          <a href="#" class="greyText">Read More &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-bottom: 11%;">
+      <p class="headingTypeOne redText">
+        Crafting immersive spaces through material-driven design, diverse
+        projects, and sustainable sensibilities.
+      </p>
+      <a href="#" class="greyText">Read More About us. &rarr;</a>
+    </div>
+
+
+  </main>
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-heading">What our clients say about us</div>
+
+    <div class="swiperContainer">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+  </div>
+
+  <div class="clients-container">
+    <div class="clients-heading">Select clients</div>
+    <marquee>
+      <div class="running-text">
+      </div>
+    </marquee>
+  </div>
+
+  <footer class="footer">
+    <div class="upper-div">
+      <img src="./media/logo1.svg" alt="" class="footer-logo" />
+    </div>
+    <div class="lower-div">
+      <div class="lower-div-1">
+        <div class="footer-heading">Connect</div>
+        <div class="sub-footer">
+          <a href="#" style="color: #ffffff" class="icon-div">
+            <img src="./media/insta.svg" alt="" srcset="" /></a>
+          <a href="#" style="color: #ffffff" class="icon-div">
+            <img src="./media/fb.svg" alt="" srcset="" /></a>
+          <a href="#" style="color: #ffffff" class="icon-div">
+            <img src="./media/linkedin.svg" alt="" srcset="" /></a>
+        </div>
+      </div>
+      <div class="lower-div-2">
+        <div class="footer-heading">Visit</div>
+        <div class="div-2-upper">
+          <div>
+            <p class="text-underline"><span>Bangalore</span></p>
+  
+            <p>#24, 35th main,Dollars</p>
+            <p>Scheme,BTM layout, 1st Stage</p>
+          </div>
+          <div>
+            <p class="text-underline"><span>Chennai</span></p>
+  
+            <p>#5, 6th Main Rd,New</p>
+            <p>Colony,Chromepet</p>
+          </div>
+        </div>
+      </div>
+      <div class="lower-div-3">
+        <div class="div-3-upper">
+          <p class="footer-heading">Enquiries</p>
+          <p>contact.betweenlines@gmail.com</p>
+          <button class="btn-div">Let's chat</button>
+        </div>
+        <div class="div-3-lower">
+          <p class="footer-heading">Careers</p>
+          <p>office.betweenlines@smail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView:
+        window.innerWidth <= 500 ? 1 : 1.7,
+      centeredSlides: true,
+      spaceBetween: window.innerWidth <= 500 ? 20 : 80,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        
+      },
+      
+    });
+    const nextButton = document.querySelector(".swiper-button-next");
+    const swiperWrapper = document.querySelector(".swiper-wrapper");
+    const slideWidth = document.querySelector(".swiper-slide").offsetWidth;
+
+    nextButton.addEventListener("click", () => {
+    swiperWrapper.style.transform = `translateX(-${slideWidth}px)`;
+});
+
+    if (window.innerWidth >= 500) {
+      const targetNode = document.querySelector('.mySwiper');
+      const observer = new MutationObserver((mutationsList) => {
+        observer.disconnect();
+
+        const slides = targetNode.querySelectorAll('.swiper-slide');
+
+        slides.forEach((slide) => {
+          if (slide.classList.contains('swiper-slide-active')) {
+            slide.querySelector(".swiper-slide-inner").classList.remove('custom-class');
+          } else {
+            slide.querySelector(".swiper-slide-inner").classList.add('custom-class');
+          }
+        });
+
+        observer.observe(targetNode, config);
+      });
+
+      const config = { attributes: true, attributeFilter: ['class'], subtree: true };
+      observer.observe(targetNode, config);
+    }
+
+
+
+  </script>
+
+  <script>
+    function onClickMenu() {
+
+      const checkbox = document.querySelector('#menu__toggle');
+      if (checkbox.checked) {
+        document.querySelector("#menuImgClosed").style.display = "none"
+        document.querySelector("#menuImgOpen").style.display = "inline"
+
+      }
+      else {
+        document.querySelector("#menuImgOpen").style.display = "none"
+        document.querySelector("#menuImgClosed").style.display = "inline"
+      }
+    }
+  </script>
+
+  <script src="./script/data.js"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>

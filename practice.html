@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles/styles.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://kit.fontawesome.com/9602f37a92.js" crossorigin="anonymous"></script>
+
+	<title>Document</title>
+</head>
+<style>
+body {
+	background: var(--lighter-grey);
+  }
+</style>
+
+<body>
+	
+	<header>
+
+		<a href="./index.html">
+		  <div class="check"></div>
+		</a>
+	
+	
+		<div class="hamburger-menu">
+		  <input onclick={onClickMenu()} id="menu__toggle" type="checkbox" />
+		  <label class="menu__btn" for="menu__toggle">
+	
+			<img style="cursor: pointer; height: 28px;" src="./media/menu.svg" alt="" id="menuImgClosed" />
+			<svg style="display: none;" xmlns=" http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+			  fill="none" id="menuImgOpen">
+			  <path
+				d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z"
+				fill="#D6D6D6" />
+			</svg>
+		  </label>
+	
+		  <ul class="menu__box">
+			<li><a class="menu__item" href="./work-list.html">Work</a></li>
+			<li><a class="menu__item" href="./practice.html">Practice</a></li>
+			<li><a class="menu__item" href="news.html">News</a></li>
+			<li><a class="menu__item" href="/stories.html">Stories</a></li>
+			<li><a class="menu__item" href="/contact.html">Contact</a></li>
+		  </ul>
+		</div>
+	
+	
+	  </header>
+
+
+
+
+
+	<div style="height: 100px;"></div>
+	<div class="mt-4">
+		<div class="row justify-content-center align-items-center">
+			<h3 class="firm-people pointer col-2 text-center item-active">The Firm</h3>
+			<h3 class="firm-people pointer col-2 text-center">The People</h3>
+		</div>
+		<div id="firm" style="display: block;width: 90vw;" class="mx-auto py-4">
+
+			<div class="row justify-content-center align-items-center">
+				<div class="col-8">
+					<img src="./media/dog.png" class="h-100" alt="">
+				</div>
+				<div class="col-4">
+					<img src="./media/fence.png" class="h-100" alt="">
+				</div>
+				<div class="col-12 row">
+					<p class="col-7 mt-4">BETWEENLINES is an award winning Urban, Architectural and Interior Design firm. Founded
+						in 2003 by Guru Prasanna.C and Deepa Suriyaprakash, the firm is now seasoned through a spectrum of
+						experiences, achieved through travel, academia, research and thought development.</p>
+
+					<div id="view-more" class="view-more">View more</div>
+
+					<div style="display: none;" id="more-data" class="w-100 row mt-5 gap-5">
+
+						<div class="row justify-content-between col-12">
+							<h2 class="col-6 fw-bold hover-red">
+								Our Practice is a continuous Learning process
+							</h2>
+							<p class="col-5 fw-semibold">
+								With each built / unbuilt project we gather experience and bolster our philosophy. We have much to know
+								and remain as receptors of new technology and changes. We are also closely involved in academia to
+								continue our learning process. We look at each project as a new opportunity to learn, unlearn and start
+								afresh. Hence our aesthetics are not informed by any, predictable style: rather by the call of site,
+								craft of our masons and client’s desire toward a particular atmosphere.
+							</p>
+						</div>
+
+						<div class="row justify-content-between col-12">
+
+							<p class="col-6 fw-semibold">
+								We believe that each material, calls for specific attention to detailing and guides the character of the
+								built space. So, there are the material driven projects in our ouevre, where the design thinking starts
+								at the module of the base material size. We are pretty much possessed by it then, constantly exploring
+								ways to work with it. Some times we end up with a formal solution and other times with very tactile,
+								experiential outcome. The whole process of understanding the character, sourcing, and working with
+								strengths and limitations of materials leaves us highly enriched and we are happy to trade our time for
+								it.
+							</p>
+							<h2 class="col-5 fw-bold hover-red">
+								At the Core, we are interested in our Materials
+							</h2>
+						</div>
+
+						<div class="row justify-content-between col-12">
+							<h2 class="col-6 fw-bold hover-red">
+								We are also interested in Diversity of Projects
+							</h2>
+							<p class="col-5 fw-semibold">
+								Because, we believe that the Process behind the Design problem is similar, irrespective of the scale of
+								operation, we lap up projects close to our heart, of all type and sizes. Our principal Architects, bring
+								their expertise at the Urban and Architectural scale and also are highly research inclined. Researching
+								is not only an integral part of our process, but also a discipline of work that we pursue. We also get
+								to collaborate with creative professionals from other fields, when we embrace diversity of projects. So
+								you'll find us working in the most autonomous, Interior design project and an intensely public, Urban
+								project with equal zest.
+							</p>
+						</div>
+
+						<div class="row justify-content-between col-12">
+
+							<p class="col-6 fw-semibold ">
+								Our definition of Sustainability, remains in the zone of building sensibly, drawing from and respecting
+								the local conditions; and also just enough. We think that the very act of building is an anti thesis of
+								the much abused term "Sustainable Architecture". We look at sustainability from aspects like, energy,
+								local economy, culture, flora and fauna in its entirety, and tread carefully. It means that we don't
+								just nod to the standards as established by certification bodies but look for wisdom in and around
+								traditional building practices. For the same reason, we are attuned to our sites and consider it an
+								inseparable part of design.
+							</p>
+							<h2 class="col-5 fw-bold hover-red">
+								We like to build Just enough
+							</h2>
+						</div>
+
+						<div id="view-less" class="view-less text-center">View less</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div style="display: none;" id="people">
+			<div class="mt-5 px-4 row justify-content-around">
+
+				<!-- profile 1 -->
+				<div class="row col-5 px-4">
+					<div class="col-5">
+						<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="200.804" height="249" fill="#ACACAC" />
+						</svg>
+					</div>
+					<div class="col-7 mt-auto mb-2">
+						<h2 class="fw-semibold fs-3">Guru Prasanna. C</h2>
+						<p class="text-secondary">Founder, Urban Designer and Architect</p>
+						<span class="pointer">
+							<img src="./media/socialarrow.svg" alt="">
+						</span>
+					</div>
+					<div class="col-12 my-3">
+						<p id="p1-c1">
+							Guru Prasanna, after completion of his architectural education from National Institute of Technology, Tiruchirapalli and professional training from reputed firms like DAAT (Delhi), Venkatraman Associates (Bangalore) and Brand new Day (Auroville), started his own practice under the name of Gargoyle Architecture and Interiors and worked on many residential, commercial and planning projects. After five years of field experience; in 2006 he adjourned to travel and pursue his education in Urban Design and Urban Development (MUDD) at the University of New South Wales, Sydney.
+						</p>
+						<p id="p1-c2" style="display: none;" class="">
+							Guru Prasanna, after completion of his architectural education from National Institute of Technology, Tiruchirapalli and professional training from reputed firms like DAAT (Delhi), Venkatraman Associates (Bangalore) and Brand new Day (Auroville), started his own practice under the name of Gargoyle Architecture and Interiors and worked on many residential, commercial and planning projects. After five years of field experience; in 2006 he adjourned to travel and pursue his education in Urban Design and Urban Development (MUDD) at the University of New South Wales, Sydney.
+
+Since his return in 2007, he continues to work as the principal of his current firm BETWEENLINES. His interest includes, travel, photography, product design, urban theory and economics, architectural conservation, sustainability and automobile engineering etc. Guru also teaches urban design to the masters program students at RV College of Architecture. When not at work, he is at work. Ideas come in dozens to him and has the energy of a 5 year old. Treasure of talents, people’s person, technology addict and an inexplicable business venture enthusiast.
+sdsds
+<span onclick="profileViewLess(this, 1)" class="pointer mt-3 d-block red-ul fw-semibold fs-6">View less</span>
+						</p>
+					</div>
+					<p onclick="profileViewMore(this, 1)" id="p1-v1" class="pointer red-ul fw-semibold fs-6">View more</p>
+				</div>
+				
+				<!-- profile 2 -->
+				<div  class="row col-5 px-4">
+
+					<div class="col-5">
+						<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="200.804" height="249" fill="#ACACAC" />
+						</svg>
+					</div>
+					<div class="col-7 mt-auto mb-2">
+						<h2 class="fw-semibold fs-3">Deepa Suriyaprakash</h2>
+						<p class="text-secondary">Founding Partner and Architect</p>
+						<span class="pointer">
+							<img src="./media/socialarrow.svg" alt="">
+						</span>
+					</div>
+					<div class="col-12 my-3">
+						<p id="p2-c1">
+							Deepa completed her architectural education from National Institute of Technology, Tiruchirapalli and professional training at Brand New Day (Auroville) and MOAD (Chennai); she pursued her education in Theory of Architecture and Design (M.Arch) from The Ohio State University, USA. Upon completing the masters program which included expansive travelling opportunities, she worked with Skidmore, Owings and Merill LLP at Chicago, USA, where she gained experience working on macro scale projects. Since 2008 she has been leading BETWEENLINES with her partner Mr.Guru Prasanna.
+						</p>
+						<p id="p2-c2" style="display: none;" class="">
+							Deepa completed her architectural education from National Institute of Technology, Tiruchirapalli and professional training at Brand New Day (Auroville) and MOAD (Chennai); she pursued her education in Theory of Architecture and Design (M.Arch) from The Ohio State University, USA. Upon completing the masters program which included expansive travelling opportunities, she worked with Skidmore, Owings and Merill LLP at Chicago, USA, where she gained experience working on macro scale projects. Since 2008 she has been leading BETWEENLINES with her partner Mr.Guru Prasanna.
+
+Her interests includes, travel, teaching, narratives, critical theory, graphic design, pattern and material studies etc. Apart from her practice she also teaches architecture and interior design at, RV College of Architecture. Her two year stint as Head of Research at CnT Architects, grounded her perspective and realigned her philosophy with the locale. When not working as an architect, she is busy composting and helping people keep their waste off, landfills.
+							
+			<span onclick="profileViewLess(this, 2)" class="pointer d-block mt-3 red-ul fw-semibold fs-6" >View less</span>
+						</p>
+					</div>
+					<p onclick="profileViewMore(this, 2)" class="pointer red-ul fw-semibold fs-6" id="p2-v1">View more</p>
+				</div>
+
+				<div class="row col-12 justify-content-around mt-5">
+					
+					<div class="row col-5">
+						<div class="col-5">
+							<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="200.804" height="249" fill="#ACACAC"/>
+								</svg>
+								
+						</div>
+						<div class="col-6 py-4">
+							<h2>Aswani</h2>
+							<p>Architect</p>
+							<img src="./media/socialarrow.svg" alt="">
+							<p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+						</div>
+					</div>
+	
+					<div class="row col-5">
+						<div class="col-5">
+							<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="200.804" height="249" fill="#ACACAC"/>
+								</svg>
+								
+						</div>
+						<div class="col-6 py-4">
+							<h2>Muqthar</h2>
+							<p>Architect</p>
+							<img src="./media/socialarrow.svg" alt="">
+							<p>Talented architect, football enthusiast and our in-house DJ. He brings dedication to all his projects and a rhythm of fantastic melodies into the office.</p>
+						</div>
+					</div>
+
+					<div class="row col-5">
+						<div class="col-5">
+							<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="200.804" height="249" fill="#ACACAC"/>
+								</svg>
+								
+						</div>
+						<div class="col-6 py-4">
+							<h2>Vaishnavi</h2>
+							<p>Architect</p>
+							<img src="./media/socialarrow.svg" alt="">
+							<p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+						</div>
+					</div>
+					
+					<div class="row col-5">
+						<div class="col-5">
+							<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="200.804" height="249" fill="#ACACAC"/>
+								</svg>
+								
+						</div>
+						<div class="col-6 py-4">
+							<h2>Gowri</h2>
+							<p>Intern</p>
+							<img src="./media/socialarrow.svg" alt="">
+							<p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+						</div>
+					</div>
+					
+					<div class="row col-5">
+						<div class="col-5">
+							<svg width="201" height="249" viewBox="0 0 201 249" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="200.804" height="249" fill="#ACACAC"/>
+								</svg>
+								
+						</div>
+						<div class="col-6 py-4">
+							<h2>Chinamma</h2>
+							<p>Office Assistance</p>
+							<div style="height: 12px;"></div>
+							<p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+						</div>
+					</div>
+
+					<div class="col-5"></div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="upper-div">
+			<img src="./media/logo1.svg" alt="" class="footer-logo" />
+		</div>
+		<div class="lower-div">
+			<div class="lower-div-1">
+				<div class="footer-heading">Connect</div>
+				<div class="sub-footer">
+					<a href="#" style="color: #ffffff" class="icon-div">
+						<img src="./media/insta.svg" alt="" srcset="" /></a>
+					<a href="#" style="color: #ffffff" class="icon-div">
+						<img src="./media/fb.svg" alt="" srcset="" /></a>
+					<a href="#" style="color: #ffffff" class="icon-div">
+						<img src="./media/linkedin.svg" alt="" srcset="" /></a>
+				</div>
+			</div>
+			<div class="lower-div-2">
+				<div class="footer-heading">Visit</div>
+				<div class="div-2-upper">
+					<div>
+						<p class="text-underline"><span>Bangalore</span></p>
+
+						<p>#24, 35th main,Dollars</p>
+						<p>Scheme,BTM layout, 1st Stage</p>
+					</div>
+					<div>
+						<p class="text-underline"><span>Chennai</span></p>
+
+						<p>#5, 6th Main Rd,New</p>
+						<p>Colony,Chromepet</p>
+					</div>
+				</div>
+			</div>
+			<div class="lower-div-3">
+				<div class="div-3-upper">
+					<p class="footer-heading">Enquiries</p>
+					<p>contact.betweenlines@gmail.com</p>
+					<button class="btn-div">Let's chat</button>
+				</div>
+				<div class="div-3-lower">
+					<p class="footer-heading">Careers</p>
+					<p>office.betweenlines@smail.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="./script/data.js"></script>
+	<script src="./script/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+
+		function profileViewMore(e, num) {
+			const id1 = document.getElementById(num == 1 ? `p1-c1` : `p2-c1`);
+			const id2 = document.getElementById(num == 1 ? `p1-c2` : `p2-c2`);
+
+			e.style.display = 'none';
+			id1.style.display = 'none';
+			id2.style.display = 'block';
+		}
+		
+		function profileViewLess(e, num) {
+			const profileBtn = document.getElementById(num == 1 ? `p1-v1` : `p2-v1`);
+			
+			const id1 = document.getElementById(num == 1 ? `p1-c1` : `p2-c1`);
+			const id2 = document.getElementById(num == 1 ? `p1-c2` : `p2-c2`);
+			
+			id1.style.display = 'block';
+			id2.style.display = 'none';
+			profileBtn.style.display = 'block';
+			
+		}
+		
+		const fp = document.querySelectorAll('.firm-people');
+		fp.forEach(x => x.onclick = onFpClick);
+		const firm = document.getElementById('firm');
+		const people = document.getElementById('people');
+
+		const viewMore = document.querySelector('#view-more');
+		const viewLess = document.querySelector('#view-less');
+		const moreData = document.querySelector('#more-data');
+
+		viewLess.onclick = (e) => {
+			const { target: x } = e;
+
+			viewMore.style.display = 'block';
+			moreData.style.display = 'none';
+		};
+
+		viewMore.onclick = (e) => {
+			const { target: x } = e;
+
+			viewMore.style.display = 'none';
+			moreData.style.display = 'block';
+		};
+
+		function onFpClick(e) {
+			fp.forEach(x => {
+
+				if (x == e.target) {
+
+					e.target.classList.add('item-active');
+					if (e.target.innerText.includes('Firm')) {
+						firm.style.display = 'block';
+						people.style.display = 'none';
+					} else {
+						people.style.display = 'block';
+						firm.style.display = 'none';
+					}
+					return;
+				}
+
+				x.classList.remove('item-active');
+
+			});
+		}
+	</script>
+</body>
+
+</html>
+
+<style>
+	.hover-red:hover {
+		--clr: rgb(179, 35, 35);
+		color: var(--clr);
+	}
+
+	.view-more {
+		text-decoration: underline;
+		font-weight: 800;
+		cursor: pointer;
+	}
+
+	.view-less {
+		text-decoration: underline;
+		font-weight: 800;
+		cursor: pointer;
+	}
+
+	.item-active {
+		--clr: rgb(179, 35, 35);
+		color: var(--clr);
+		text-decoration: underline;
+	}
+
+	.red-ul {
+		text-decoration: underline;
+	}
+
+	.pointer {
+		cursor: pointer;
+	}
+	a.menu__item:hover{
+        color:var(--lighter-grey);
+    }
+</style>
